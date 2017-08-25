@@ -53,7 +53,7 @@ function run() {
     spinner.start()
     download("myfirebase/myfirebase", to, { clone: clone }, function(err) {
         spinner.stop()
-        if (!err) { console.log(chalk.green(name + " hase been created successfully.")) } else {
+        if (!err) { console.log(chalk.green(name + " has been successfully created.")) } else {
             console.log(chalk.red('Failed to download repo : ' + err.message.trim()))
         }
     })
