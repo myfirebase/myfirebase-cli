@@ -13,7 +13,6 @@ var figlet = require('figlet')
 program
     .usage('[project-name]')
     .option('-c, --clone', 'use git clone')
-    .option('--offline', 'use cached template')
 
 /**
  * Help.
