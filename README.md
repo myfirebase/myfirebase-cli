@@ -12,6 +12,8 @@ $ npm install -g myfirebase-cli
 
 ### Usage
 
+#### Creating myfirebase projects
+
 ``` bash
 $ myfirebase <project-name>
 ```
@@ -20,3 +22,10 @@ Example:
 
 ``` bash
 $ myfirebase my-project
+```
+
+#### Creating components in myfirebase project.
+
+```bash
+$ myfirebase new-component <component-name>
+```
