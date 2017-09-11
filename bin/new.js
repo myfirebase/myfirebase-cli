@@ -9,7 +9,6 @@ var tildify = require('tildify')
 var chalk = require('chalk')
 var inquirer = require('inquirer')
 var figlet = require('figlet')
-var shell = require("shelljs")
 var ncp = require("ncp").ncp
 
 program
