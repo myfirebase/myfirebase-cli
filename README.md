@@ -6,7 +6,7 @@ A simple CLI for creating Myfirbase projects.
 
 Prerequisites: [Node.js](https://nodejs.org/en/) (>=4.x, 6.x preferred), npm version 3+ and [Git](https://git-scm.com/).
 
-``` bash
+```bash
 $ npm install -g myfirebase-cli
 ```
 
@@ -14,13 +14,13 @@ $ npm install -g myfirebase-cli
 
 #### Creating myfirebase projects
 
-``` bash
+```bash
 $ myfirebase <project-name>
 ```
 
 Example:
 
-``` bash
+```bash
 $ myfirebase my-project
 ```
 
