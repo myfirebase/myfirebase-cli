@@ -13,9 +13,11 @@ var ncp = require("ncp").ncp
 var fs = require('fs')
 var ejs = require('ejs')
 
+console.log(chalk.green(figlet.textSync('Myfirease-cli', { horizontalLayout: 'full' })))
+
 program
     .version(require('./../package').version)
-    .usage('<command> <name>')
+    .usage('<command> <file-name>')
     .command('new:project', 'create new myfirebase project')
     .command('new:component', 'create new component')
     .command('new:middelware', 'create new middleware file')
@@ -26,7 +28,6 @@ program
  */
 
 program.on('--help', function() {
-    console.log(chalk.green(figlet.textSync('Myfirease-cli', { horizontalLayout: 'full' })))
     console.log('  Example:')
     console.log()
     console.log(chalk.gray('    # create a new project with Myfirebase'))
