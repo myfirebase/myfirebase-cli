@@ -18,16 +18,15 @@ console.log(chalk.green(figlet.textSync('Myfirease-cli', { horizontalLayout: 'fu
 program
     .version(require('./../package').version)
     .usage('<command> <file-name>')
-    .command('new:project', 'create new myfirebase project')
-    .command('new:component', 'create new component')
-    .command('new:middelware', 'create new middleware file')
     .option('-c, --clone', 'use git clone')
+    .parse(process.argv)
 
 /**
  * Help.
  */
 
 program.on('--help', function() {
+    console.log()
     console.log('  Example:')
     console.log()
     console.log(chalk.gray('    # create a new project with Myfirebase'))
@@ -87,6 +86,7 @@ function run() {
                 console.log(chalk.green("a new middleware has been successfully created"));
             })
             break;
+
         case 'project':
             var spinner = ora('downloading project')
             spinner.start()
