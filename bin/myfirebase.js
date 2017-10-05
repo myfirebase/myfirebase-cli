@@ -54,7 +54,7 @@ help()
 var rawName = program.args[0]
 var inPlace = !rawName || rawName === '.'
 var name = inPlace ? path.relative('../', process.cwd()) : rawName
-var to = path.resolve(rawName || '.')
+var to = path.resolve(program.args[1] || '.')
 var clone = program.clone || false
 var templateDir = path.join(__dirname, './../lib/scaffold')
 
