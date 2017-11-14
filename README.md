@@ -15,17 +15,17 @@ $ npm install -g myfirebase-cli
 #### Creating myfirebase projects
 
 ```bash
-$ myfirebase <project-name>
+$ myfirebase new:project <project-name>
 ```
 
 Example:
 
 ```bash
-$ myfirebase my-project
+$ myfirebase new:project my-project
 ```
 
 #### Creating components in myfirebase project.
 
 ```bash
-$ myfirebase new-component <component-name>
+$ myfirebase new:component <component-name>
 ```
