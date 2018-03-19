@@ -86,7 +86,24 @@ function run() {
                 console.log(chalk.green("a new middleware has been successfully created"));
             })
             break;
+        
 
+        case 'model':
+
+        var modelName = program.args[1];
+        modelName = modelName.charAt(0).toUpperCase() + modelName.slice(1)
+        
+        var file = fs.readFileSync(path.join(__dirname, './../lib/template/model.js'), 'utf8')
+        var result = ejs.render(file, { model: modelName })
+        fs.writeFile(path.resolve("src/models/" + modelName + '.js'), result, function(err) {
+            if (err) {
+                console.log(chalk.red(err))
+                return 1
+            }
+            console.log(chalk.green(modelName + " has been successfully created"));
+        })
+        break;
+        
         case 'project':
             var spinner = ora('downloading project')
             spinner.start()
