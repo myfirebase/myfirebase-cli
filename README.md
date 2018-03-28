@@ -29,3 +29,15 @@ $ myfirebase new:project my-project
 ```bash
 $ myfirebase new:component <component-name>
 ```
+
+#### Creating models in myfirebase project.
+
+```bash
+$ myfirebase new:model <model-name>
+```
+
+#### Creating middlewares in myfirebase project.
+
+```bash
+$ myfirebase new:middleware <middleware-name>
+```
