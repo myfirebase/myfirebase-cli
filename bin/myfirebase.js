@@ -35,6 +35,9 @@ program.on('--help', function() {
     console.log(chalk.gray('    # create a new component in your project'))
     console.log('    $ myfirebase new:component <component-name>')
     console.log()
+    console.log(chalk.gray('    # create a new model'))
+    console.log('    $ myfirebase new:model <middleware-name>')
+    console.log()
     console.log(chalk.gray('    # create a new middleware in your project'))
     console.log('    $ myfirebase new:middleware <middleware-name>')
     console.log()
@@ -97,7 +100,7 @@ function run() {
         var result = ejs.render(file, { model: modelName })
         fs.writeFile(path.resolve("src/models/" + modelName + '.js'), result, function(err) {
             if (err) {
-                console.log(chalk.red(err))
+                console.log(chalk.red("Project directory doesn't exists: " + err))
                 return 1
             }
             console.log(chalk.green(modelName + " has been successfully created"));
