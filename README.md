@@ -1,5 +1,8 @@
 ### Myfirebase-CLI
 
+
+![npm](https://img.shields.io/npm/v/myfirebase-cli.svg)
+
 A simple CLI for creating Myfirbase projects.
 
 ### Installation
