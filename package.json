@@ -1,6 +1,6 @@
 {
     "name": "myfirebase-cli",
-    "version": "0.1.15",
+    "version": "0.1.16",
     "description": "A simple CLI for creating Myfirebase project",
     "preferGlobal": true,
     "bin": {
@@ -14,7 +14,7 @@
         "url": "git+https://github.com/myfirebase/myfirebase-cli.git"
     },
     "author": "Amrani Houssain",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/myfirebase/myfirebase-cli/issues"
     },
