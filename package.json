@@ -1,6 +1,6 @@
 {
     "name": "myfirebase-cli",
-    "version": "0.1.16",
+    "version": "0.1.17",
     "description": "A simple CLI for creating Myfirebase project",
     "preferGlobal": true,
     "bin": {
