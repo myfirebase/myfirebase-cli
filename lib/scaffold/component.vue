@@ -6,10 +6,10 @@
 
 <script>
 export default {
-    mounted() {
+    mounted () {
         console.log("component is ready!!")
     },
-    data() {
+    data () {
         return {
             // models
         }
